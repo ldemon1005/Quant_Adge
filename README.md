@@ -1,4 +1,14 @@
 # Tuandv
+ 
+cài đặt các plugin : npm install --save @angular/material @angular/cdk
+                      
+chạy : npm start 
+
+Cách thực hiện : -Khởi đầu tạo một mảng 30 phần tử với các giá trị random theo yêu cầu
+                 -Sử dụng hàm change_data() để thay đổi dữ liệu
+                 -Sử dụng hàm setInterval với thời gian chờ là 5 giây để đổi dữ liệu
+                 -Sử dụng mat-tabs-group để tạo 2 tab
+                 -Sử dụng sort_data() với tham số truyền vào là tab đang ở để thực hiện sắp xếp                    theo yêu cầu ở mỗi tab
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
