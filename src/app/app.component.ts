@@ -32,7 +32,7 @@ export class AppComponent {
         value.code = Math.random().toString(36).substr(2, 5).toUpperCase() + "." + Math.random().toString(36).substr(2, 2).toUpperCase();
         value.company = Math.random().toString(36).substr(2, 9).toUpperCase();
         value.price = (Math.random()*(99.99-0.01) + 0.01).toFixed(2);
-        value.volume = Math.floor(Math.random()*(1000000-100) + 100);
+        value.volume = Math.floor(Math.random()*(1000000-1000) + 1000);
         value.value = Math.ceil(value.price*value.volume);
         value.change = 0;
         value._change = 0;
