@@ -1,0 +1,55 @@
+<mat-tab-group (selectedTabChange)="tabChange($event)">
+    <mat-tab label="TOP GAINERS">
+        <table class="mdl-data-table col-sm-12 no-padding" style="width: 100%">
+            <thead>
+            <tr class="text-center">
+                <th>Code</th>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Value</th>
+                <th>Change</th>
+                <th>%Change</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="poiter text-center" *ngFor="let item of list_data">
+                <td style="color: aqua">{{item.code}}</td>
+                <td>{{item.company}}</td>
+                <td><b>{{item.price}}</b></td>
+                <td><b>{{item.value}}</b></td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item.change}}</td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item._change}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </mat-tab>
+    <mat-tab label="TOP LOSERS">
+        <table class="mdl-data-table col-sm-12 no-padding" style="width: 100%">
+            <thead>
+            <tr class="text-center">
+                <th>Code</th>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Value</th>
+                <th>Change</th>
+                <th>%Change</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="poiter text-center" *ngFor="let item of list_data">
+                <td style="color: aqua">{{item.code}}</td>
+                <td>{{item.company}}</td>
+                <td><b>{{item.price}}</b></td>
+                <td><b>{{item.value}}</b></td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item.change}}</td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item._change}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </mat-tab>
+</mat-tab-group>
+<style>
+    .mat-tab-labels{
+        background: #005cbf !important;
+    }
+</style>

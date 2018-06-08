@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+.mat-tab-labels {
+    float: right;
+    color: white;
+}
+.mat-tab-list {
+    background: #005cbf !important;
+}
