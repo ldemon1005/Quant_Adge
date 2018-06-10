@@ -15,10 +15,10 @@
             <tr class="poiter text-center" *ngFor="let item of list_data">
                 <td style="color: aqua">{{item.code}}</td>
                 <td>{{item.company}}</td>
-                <td><b>{{item.price}}</b></td>
-                <td><b>{{item.value}}</b></td>
-                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item.change}}</td>
-                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item._change}}</td>
+                <td><b>{{item.price | number}}</b></td>
+                <td><b>{{item.value | number}}</b></td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item.change | number}}</td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item._change | number}}</td>
             </tr>
             </tbody>
         </table>
@@ -39,10 +39,10 @@
             <tr class="poiter text-center" *ngFor="let item of list_data">
                 <td style="color: aqua">{{item.code}}</td>
                 <td>{{item.company}}</td>
-                <td><b>{{item.price}}</b></td>
-                <td><b>{{item.value}}</b></td>
-                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item.change}}</td>
-                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item._change}}</td>
+                <td><b>{{item.price | number}}</b></td>
+                <td><b>{{item.value | number}}</b></td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item.change | number}}</td>
+                <td class="{{item.change_type == 1 ? 'text-danger' : 'text-success'}}">{{item._change | number}}</td>
             </tr>
             </tbody>
         </table>
